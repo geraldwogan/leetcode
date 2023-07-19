@@ -19,13 +19,8 @@ class Solution {
 
         
         
-        
         if(dateTime11.isEqual(dateTime20)){
             System.out.println("equals");
-            System.out.println(dateTime11.isEqual(dateTime20));
-
-            System.out.println(dateTime11);
-            System.out.println(dateTime20);
             return true;
         }
             System.out.println("not equals");
@@ -35,11 +30,5 @@ class Solution {
         }
         return !dateTime11.isBefore(dateTime20);
         
-        // if(dateTime11.isBefore(dateTime20) && dateTime10.isAfter(dateTime21)){
-        //     return false;
-        // }
-        // else{
-        //     return true;
-        // }
     }
 }
