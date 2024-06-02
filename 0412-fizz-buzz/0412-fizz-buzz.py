@@ -10,5 +10,6 @@ class Solution:
             elif num % 5 == 0:
                 answer.append('Buzz') 
             else:
-                answer.append(str(i)) 
+                answer.append(str(i))
+                
         return answer
