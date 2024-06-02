@@ -1,5 +1,6 @@
 class Solution:
     def fizzBuzz(self, n: int) -> List[str]:
+        
         answer = []
         
         for num, i in enumerate(range(1, n+1), start=1):
