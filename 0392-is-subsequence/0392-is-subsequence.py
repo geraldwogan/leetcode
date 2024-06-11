@@ -24,14 +24,12 @@ class Solution:
         
         while left_pointer < len(s) and right_pointer < len(t):
             if s[left_pointer] == t[right_pointer]:
-                # Match found, iterate both
+                # Match found, increase both pointers (either way, the right_pointer is increased)
                 left_pointer += 1
+            # If no match, try next letter in t by increasing the right_pointer (either way, the right_pointer is increased)
             right_pointer += 1
                 
         # If we have found each letter, the left_pointer will have made it all the way to len(s)
-        if left_pointer == len(s):
-            return True
-        else:
-            return False
+        return left_pointer == len(s)
             
             
