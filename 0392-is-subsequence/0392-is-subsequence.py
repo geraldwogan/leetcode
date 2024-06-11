@@ -1,41 +1,20 @@
 class Solution:
     def isSubsequence(self, s: str, t: str) -> bool:
         
-#         idx = 0
-#         for i in range(len(s)):
-#             found = False
-#             for j in range(len(t)):
-#                 if s[i] == t[j] and idx <= j:
-#                     print(f'found {s[i]}')
-#                     idx = j
-#                     found = True
-#                     front = t[:j]   # up to but not including n
-#                     back = t[j+j:]  # n+1 through end of string
-#                     t = front + back
-#                     continue
-                    
-#             if found == False:
-#                 return False
-#             else:
-#                 break
-#         return True
-        
+        # Loop over each letter that needs to be found
         for i in range(len(s)):
-            print(f'searching for {s[i]}')
             found = False
-
-            for j in range(len(t)):
-                print(f'checking {t[j]}')
+            # Loop over each letter that is a potential match
+            for j in range(len(t)):                
                 if s[i] == t[j]:
-                    print(f'found')
+                    # When match is found, remove everything from match string up to and including the match
                     t = t[j+1:]
-                    print(f'reduced to {t}')
                     found = True
                     break 
-           
-        
-        
+                    
+           # If any letter is not found in a pass, return False
             if found == False:
                 return False
+        # If all letters have been found, we will retun True
         return True
                     
