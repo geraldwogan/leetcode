@@ -30,9 +30,6 @@ class Solution:
             right_pointer += 1
                 
         # If we have found each letter, the left_pointer will have made it all the way to len(s)
-        if left_pointer == len(s):
-            return True
-        else:
-            return False
+        return left_pointer == len(s)
             
             
