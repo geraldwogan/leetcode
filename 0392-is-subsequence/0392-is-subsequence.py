@@ -21,17 +21,14 @@ class Solution:
                     
         # Solution 2 - attempting to follow the solution guide on leetcode
         left_pointer, right_pointer = 0 , 0
-        print(left_pointer)
-        print(right_pointer)
         
         while left_pointer < len(s) and right_pointer < len(t):
             if s[left_pointer] == t[right_pointer]:
                 # Match found, iterate both
                 left_pointer += 1
-                right_pointer += 1
-            else:
-                # No match, try next letter in t
-                right_pointer +=1
+            right_pointer += 1
+                
+        # If we have found each letter, the left_pointer will have made it all the way to len(s)
         if left_pointer == len(s):
             return True
         else:
