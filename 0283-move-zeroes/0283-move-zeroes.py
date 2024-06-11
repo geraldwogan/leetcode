@@ -4,7 +4,7 @@ class Solution:
         Do not return anything, modify nums in-place instead.
         """
         
-        # Implement Bubble Sort for this one
+        # Implemented Bubble Sort for this one
         for i in range(len(nums)):
             swapped = False
             for j in range(len(nums) - i - 1):
