@@ -5,7 +5,7 @@ class Solution:
         alt.append(0)
         
         for i, val in enumerate(gain):
-            alt.append(alt[i]+val)
+            alt.append(int(alt[i])+int(val))
             
         
         return max(alt)
