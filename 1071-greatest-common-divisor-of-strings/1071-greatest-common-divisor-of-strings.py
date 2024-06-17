@@ -4,11 +4,8 @@ class Solution:
         # base case
         if(str1==str2):
             return str1
-        # if len(str2) < len(str1) and str2 not in  str1:
-        #     return ""
         
         divs = []
-
         
         for i, val in enumerate(str2):
             for j, val in enumerate(str2):
@@ -17,7 +14,6 @@ class Solution:
                     
                     # print(f'start {str2[i:j+1]}')
                    
-
                     # Attempt 1:
                     # if ((str2[i:j+1] + str2[i:j+1] in str1 and str2[i:j+1] in str2) 
                     # # or (str2[i:j+1] + str2[i:j+1] in str2 and str2[i:j+1] in str1) 
@@ -30,24 +26,9 @@ class Solution:
                     # print(splits)
                     # if(len(set(splits))==1 and len(splits)!=1 and len(str1)!=len(str2[i:j+1])):
                     
-                    # Attempt 3:
-                    # print(len(div)*(str1.count(div)))
-                    # print(len(str1))
-                    # print(len(div)*(str2.count(div)))
-                    # print(len(str2))
-                    # print(len(str1))
-                    # print(len(div))
-                    
+                    # Attempt 3: 
                     if(len(div)*(str1.count(div)) == len(str1) and len(div)*(str2.count(div)) == len(str2) ):
-                       
-                    
-
-                        
                         # print(f'found :: {str2[i:j+1]}')
-                        # print(str1)
-                        # print(str2)
-                        # print(len(splits[0])==len(splits[-1]))
-
                         divs.append(str2[i:j+1])
                         
 
