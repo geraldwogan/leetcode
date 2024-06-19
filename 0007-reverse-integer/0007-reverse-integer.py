@@ -7,16 +7,13 @@ class Solution:
         else:
             s = str(x)
         
-        print(s)
+        # print(s)
         
         s=''.join((list(reversed(s))))
-        print(s)
+        # print(s)
+        s=int(s)
         
-        if int(s) > 2147483648:
-            return 0
-        try:
-            s = int(s)
-        except Exception as e:
+        if s > 2147483648:
             return 0
 
         return s if x > 0 else s*-1
