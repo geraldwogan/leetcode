@@ -2,14 +2,9 @@ class Solution:
     def isPalindrome(self, s: str) -> bool:
         
         s = s.lower()
-        # s= s.replace(' ','')
-        print(s)
-        # s = s.islower
-        # s = s.is
         s = [x for x in s if x.isalnum()]
-        # s = s.i
         s = ''.join(s)
-        print(s)
+        # print(s)
         
         # two pointers
         p1 = 0
